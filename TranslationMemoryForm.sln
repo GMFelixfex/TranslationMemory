@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationMemoryForm", "TranslationMemoryForm\TranslationMemoryForm.csproj", "{925F5F5C-3669-456F-AF32-31113C8032B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationMemoryUnitTest", "TranslationMemoryUnitTest\TranslationMemoryUnitTest.csproj", "{DA7DC721-4E16-4FA9-9DF1-4F226F2D5419}"
+	ProjectSection(ProjectDependencies) = postProject
+		{925F5F5C-3669-456F-AF32-31113C8032B8} = {925F5F5C-3669-456F-AF32-31113C8032B8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{925F5F5C-3669-456F-AF32-31113C8032B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925F5F5C-3669-456F-AF32-31113C8032B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925F5F5C-3669-456F-AF32-31113C8032B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925F5F5C-3669-456F-AF32-31113C8032B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7DC721-4E16-4FA9-9DF1-4F226F2D5419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7DC721-4E16-4FA9-9DF1-4F226F2D5419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7DC721-4E16-4FA9-9DF1-4F226F2D5419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7DC721-4E16-4FA9-9DF1-4F226F2D5419}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35937A86-A116-4466-A8BE-0435CC5157F8}
+	EndGlobalSection
+EndGlobal
