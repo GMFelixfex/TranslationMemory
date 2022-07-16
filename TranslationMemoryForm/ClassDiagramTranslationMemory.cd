@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TranslationMemoryForm.Code.Builder.MainMenuBuilder">
+    <Position X="3.75" Y="9.5" Width="2.25" />
+    <AssociationLine Name="user" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.057" Y="0.379" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAGgAAAAAAAAAgAAEQCAACEAAAAAAAAACAAQA=</HashCode>
+      <FileName>Code\Builder\MainMenuBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.DataHandling.DataChecker">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAIAAAAA=</HashCode>
+      <FileName>Code\DataHandling\DataChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.DataHandling.DataHandler">
+    <Position X="21.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAkAEAQigAABABAQpAAAARSDAAAAACAAADAEAAIA=</HashCode>
+      <FileName>Code\DataHandling\DataHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="database" />
+      <Field Name="client" />
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.MainApp.MainStats">
+    <Position X="21.25" Y="11.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AYQAAAAAAAAAYBEQAABAAYEBAACJAAAAAwBABYAAEAQ=</HashCode>
+      <FileName>Code\MainApp\MainStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.User.User">
+    <Position X="24" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAACIAEAAggABBAAAEAAQAAAAQAAABAggAAAAA=</HashCode>
+      <FileName>Code\User\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="privileges" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.User.Userdata">
+    <Position X="26.5" Y="11.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAgEAACEIAgAAJgAAEIAAAAAQAAAAJIAIAAAQA=</HashCode>
+      <FileName>Code\User\Userdata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TranslationMemoryForm.Code.Words.Word">
+    <Position X="18" Y="11.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEIBAABAAIAAAgAAABBEZBAAAAAAAAAAABAIAAAgCA=</HashCode>
+      <FileName>Code\Words\Word.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.AdminButtons">
+    <Position X="7.75" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAKAAAACAAAAoEAAIAAAAAAAAAA=</HashCode>
+      <FileName>Elements\AdminButtons.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mainMenuBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.TranslationElement">
+    <Position X="1.75" Y="19.75" Width="2.5" />
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="22.503" />
+        <Point X="13.034" Y="22.503" />
+        <Point X="13.034" Y="6.312" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.358" Y="-0.817" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mainstats" Type="TranslationMemoryForm.Code.MainApp.MainStats">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.979" Y="0.189" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="displayedWords" Type="TranslationMemoryForm.Code.Words.Word" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="21" />
+        <Point X="4.625" Y="21" />
+        <Point X="4.625" Y="16.257" />
+        <Point X="12.908" Y="16.257" Type="JumpStart" />
+        <Point X="13.117" Y="16.257" Type="JumpEnd" />
+        <Point X="18.5" Y="16.257" />
+        <Point X="18.5" Y="15.882" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="wordToTranslate" Type="TranslationMemoryForm.Code.Words.Word" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.125" Y="19.75" />
+        <Point X="4.125" Y="15.688" />
+        <Point X="12.908" Y="15.688" Type="JumpStart" />
+        <Point X="13.117" Y="15.688" Type="JumpEnd" />
+        <Point X="18" Y="15.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAFAIAAAiCOCIAAGADiBMAAiBAACCAAAAIABQgEBhQA=</HashCode>
+      <FileName>Elements\TranslationElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataHandler" />
+      <Field Name="mainstats" />
+      <Field Name="userdata" />
+      <Field Name="wordToTranslate" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="displayedWords" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.TranslatorButtons">
+    <Position X="7.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEAAAKAAAACAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Elements\TranslatorButtons.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mainMenuBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.UserButtons">
+    <Position X="7.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABCAAAAAAAIKIgAACAEAAEAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Elements\UserButtons.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mainMenu" />
+      <Field Name="mainMenuBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Form1">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CIhAAAAACCCAAAIAAAiAEAQiBQBQKAAAJARAAAAAAYA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.MainMenu">
+    <Position X="4" Y="2" Width="2" />
+    <AssociationLine Name="currentUser" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.025" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.969" Y="5.8" />
+        <Point X="4.969" Y="6.312" />
+        <Point X="5.464" Y="6.312" Type="JumpStart" />
+        <Point X="5.63" Y="6.312" Type="JumpEnd" />
+        <Point X="7.292" Y="6.312" Type="JumpStart" />
+        <Point X="7.458" Y="6.312" Type="JumpEnd" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.422" Y="-0.529" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mainMenuBuilder" Type="TranslationMemoryForm.Code.Builder.MainMenuBuilder">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.715" Y="0.553" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAACAAAACAAQKAAIAiAIACAAAAAIAgAAACAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentUser" />
+      <Field Name="dataHandler" />
+      <Field Name="mainMenuBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.SearchWordElement">
+    <Position X="1.75" Y="13.75" Width="1.75" />
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="16.485" />
+        <Point X="4.042" Y="16.485" Type="JumpStart" />
+        <Point X="4.208" Y="16.485" Type="JumpEnd" />
+        <Point X="4.542" Y="16.485" Type="JumpStart" />
+        <Point X="4.708" Y="16.485" Type="JumpEnd" />
+        <Point X="12.997" Y="16.485" />
+        <Point X="12.997" Y="6.312" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.325" Y="-0.577" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mainstats" Type="TranslationMemoryForm.Code.MainApp.MainStats" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="17.335" />
+        <Point X="4.042" Y="17.335" Type="JumpStart" />
+        <Point X="4.208" Y="17.335" Type="JumpEnd" />
+        <Point X="4.542" Y="17.335" Type="JumpStart" />
+        <Point X="4.708" Y="17.335" Type="JumpEnd" />
+        <Point X="12.908" Y="17.335" Type="JumpStart" />
+        <Point X="13.117" Y="17.335" Type="JumpEnd" />
+        <Point X="21" Y="17.335" />
+        <Point X="21" Y="17.478" />
+        <Point X="21.625" Y="17.478" />
+        <Point X="21.625" Y="17.228" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.046" Y="0.65" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="user" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.053" Y="0.099" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAFCAAAAiCKAAAAKABCAAAAiAABCAAAAAAAAQgABAQA=</HashCode>
+      <FileName>Elements\SearchWordElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataHandler" />
+      <Field Name="mainstats" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="displayedWords" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.UserManageElement">
+    <Position X="1.5" Y="28.5" Width="3" />
+    <AssociationLine Name="currentUser" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.053" Y="0.911" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="35.044" />
+        <Point X="12.992" Y="35.044" />
+        <Point X="12.992" Y="6.312" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.382" Y="-1.007" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="displayedUsers" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.035" Y="0.565" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mainstats" Type="TranslationMemoryForm.Code.MainApp.MainStats">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.063" Y="0.976" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>UBBAAAQATCABAACQEYGAkACiAASACIAQCCABAAADAAg=</HashCode>
+      <FileName>Elements\UserManageElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentUser" />
+      <Field Name="dataHandler" />
+      <Field Name="mainstats" />
+      <Field Name="userdata" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="displayedUsers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.StatisticsElement">
+    <Position X="9" Y="18.75" Width="1.5" />
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="20.688" />
+        <Point X="13.017" Y="20.688" />
+        <Point X="13.017" Y="6.312" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.372" Y="-1.043" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="user" Type="TranslationMemoryForm.Code.User.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.018" Y="1.279" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAQAAACAAAAAAAACAAAAiAAAAAAEAAAAAAIAAAQA=</HashCode>
+      <FileName>Elements\StatisticsElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataHandler" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TranslationMemoryForm.Elements.LanguageManagementElement">
+    <Position X="9" Y="25" Width="2.75" />
+    <AssociationLine Name="dataHandler" Type="TranslationMemoryForm.Code.DataHandling.DataHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="26.018" />
+        <Point X="13.025" Y="26.018" />
+        <Point X="13.025" Y="6.312" />
+        <Point X="21.75" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.404" Y="-0.76" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mainstats" Type="TranslationMemoryForm.Code.MainApp.MainStats" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="26.938" />
+        <Point X="12.908" Y="26.938" Type="JumpStart" />
+        <Point X="13.075" Y="26.938" Type="JumpEnd" />
+        <Point X="22.292" Y="26.938" Type="JumpStart" />
+        <Point X="22.458" Y="26.938" Type="JumpEnd" />
+        <Point X="22.812" Y="26.938" />
+        <Point X="22.812" Y="17.228" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.083" Y="1.296" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgBAAAAACCAAAIEACACAkAAiAAAAAAAAASABAAAIAAA=</HashCode>
+      <FileName>Elements\LanguageManagementElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataHandler" />
+      <Field Name="mainstats" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MongoDB.Driver.MongoClient" Collapsed="true">
+    <Position X="26.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MongoDB.Driver.IMongoDatabase" Collapsed="true">
+    <Position X="26.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="TranslationMemoryForm.Code.User.UserRoles">
+    <Position X="25.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\User\User.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
