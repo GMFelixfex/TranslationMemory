@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TranslationMemoryForm.Code.Builder
+namespace TranslationMemoryForm.Code.Builder //Ist ein Builder objekt
 {
     public class MainMenuBuilder
     {
