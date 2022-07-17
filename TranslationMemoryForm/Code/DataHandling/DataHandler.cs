@@ -273,7 +273,7 @@ namespace TranslationMemoryForm.Code.DataHandling
 
 
 
-        public MainApp.MainStats GetMainStats() //Better implementation
+        public MainApp.MainStats GetMainStats()
         {
             var collection = database.GetCollection<MainApp.MainStats>("MainStats");
             var filter = Builders<MainApp.MainStats>.Filter.Empty;
