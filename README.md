@@ -37,6 +37,7 @@ Funktionen können dem UseCase diagramm entnommen werden.
 Wichtig: Man kann sich registrieren und einloggen (jeweiliger button)
 Im Hauptmenu muss man auf einen der Buttons kilcken um an die jeweilige funktion zu gelangen.
 
+Executable ist in TranslationMemoryForm\bin\Release\net6.0-windows\TranslationMemoryForm.exe
 ## Cleancode infos
 
 Userdata ist absichtlich nicht UserData geschieben (für mich ist dies ein zusammenhängendes wort)
