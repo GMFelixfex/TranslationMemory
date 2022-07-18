@@ -8,6 +8,7 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 
 namespace TranslationMemoryForm.Code.DataHandling //Nutzt singleton
+{ 
     internal class DataHandler
     {
         private static readonly DataHandler instance = new DataHandler();
